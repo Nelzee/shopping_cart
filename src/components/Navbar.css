@@ -1,0 +1,12 @@
+.navbar_container {
+  display: flex;
+  gap: 7px;
+}
+
+.navbar_element {
+  list-style: none;
+}
+
+.navbar_element a {
+  list-style: none;
+}
