@@ -12,7 +12,7 @@ const Root = () => {
       <Navbar cartItems={cartItems} />
       {location.pathname === "/" && (
         <div className="hero">
-          <h1>Welcome to out shop enjoy!</h1>
+          <h1>Welcome to our shop enjoy!</h1>
         </div>
       )}
       <Outlet context={{ cartItems, setCartItems }} />
