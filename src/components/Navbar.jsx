@@ -1,19 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
   return (
     <div className="navbar_container">
-      <li className="navbar_element">
-        <Link to="/">Home</Link>
-      </li>
-      <li className="navbar_element">
-        <Link to="/shop">Shop</Link>
-      </li>
-      <li className="navbar_element">
-        <Link to="/cart">Cart</Link>
-      </li>
+      <div className="navbar_link_container">
+        <li className="navbar_element">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="navbar_element">
+          <Link to="/shop">Shop</Link>
+        </li>
+      </div>
+      <div className="navbar_cart_container">
+        <Link to="/cart">Cart:{cartItems?.length}</Link>
+      </div>
     </div>
   );
 };

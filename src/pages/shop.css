@@ -1,0 +1,35 @@
+.shop_items_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+  justify-content: center;
+  gap: 16px; /* Add some space between items */
+  margin: 10px;
+  padding-inline: 20px;
+}
+
+.shop_item_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  overflow: hidden; /* Hide any overflow content */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 16px; /* Optional: Add padding inside the container */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.shop_item_container img {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: contain; /* Ensure the image fits within the container */
+  display: block; /* Remove any extra spacing below the image */
+}
+
+.shop_item_container button {
+  background-color: rgb(142, 199, 225);
+  padding: 5px;
+  outline: none;
+  border: none;
+}
